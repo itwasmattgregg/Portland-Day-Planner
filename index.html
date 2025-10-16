@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portland Day Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🌲 Portland Day Planner 🌲</h1>
+        <p>Spin the wheels to plan your perfect Portland day!</p>
+      </header>
+
+      <div class="spinner-container">
+        <div class="spinner-ring" id="food-spinner">
+          <div class="spinner-label">🍽️ FOOD</div>
+          <div class="spinner-wheel">
+            <div class="spinner-option">Coffee Shop</div>
+            <div class="spinner-option">Food Cart</div>
+            <div class="spinner-option">Brewery</div>
+            <div class="spinner-option">Farmers Market</div>
+            <div class="spinner-option">Try New Restaurant</div>
+            <div class="spinner-option">Cook at Home</div>
+            <div class="spinner-option">Food Truck</div>
+            <div class="spinner-option">Dessert Spot</div>
+          </div>
+        </div>
+
+        <div class="spinner-ring" id="activity-spinner">
+          <div class="spinner-label">🎯&nbsp;ACTIVITY</div>
+          <div class="spinner-wheel">
+            <div class="spinner-option">Museum</div>
+            <div class="spinner-option">Park Walk</div>
+            <div class="spinner-option">Bookstore</div>
+            <div class="spinner-option">Art Gallery</div>
+            <div class="spinner-option">Thrift Shopping</div>
+            <div class="spinner-option">Live Music</div>
+            <div class="spinner-option">Bike Ride</div>
+            <div class="spinner-option">Market Browsing</div>
+          </div>
+        </div>
+
+        <div class="spinner-ring" id="outdoor-spinner">
+          <div class="spinner-label">🌿&nbsp;OUTDOOR</div>
+          <div class="spinner-wheel">
+            <div class="spinner-option">Forest Park</div>
+            <div class="spinner-option">Swimming</div>
+            <div class="spinner-option">Rose Garden</div>
+            <div class="spinner-option">Hiking Trail</div>
+            <div class="spinner-option">City Viewpoint</div>
+            <div class="spinner-option">Neighborhood Walk</div>
+            <div class="spinner-option">Picnic Spot</div>
+            <div class="spinner-option">Japanese Garden</div>
+          </div>
+        </div>
+
+        <div class="spinner-ring" id="evening-spinner">
+          <div class="spinner-label">🌙&nbsp;EVENING</div>
+          <div class="spinner-wheel">
+            <div class="spinner-option">Cocktail Bar</div>
+            <div class="spinner-option">Movie Theater</div>
+            <div class="spinner-option">Comedy Show</div>
+            <div class="spinner-option">Game Night</div>
+            <div class="spinner-option">Sunset Viewing</div>
+            <div class="spinner-option">Night Market</div>
+            <div class="spinner-option">Cozy Reading</div>
+            <div class="spinner-option">Dance Night</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="spin-button" class="spin-button">🎲 Plan My Day!</button>
+        <button id="reset-button" class="reset-button">🔄 Reset</button>
+      </div>
+
+      <div class="results" id="results">
+        <h2>Your Portland Day Plan:</h2>
+        <div class="day-plan">
+          <div class="plan-item">
+            <span class="time">Food:</span>
+            <span class="activity" id="food-result">-</span>
+          </div>
+          <div class="plan-item">
+            <span class="time">Activity:</span>
+            <span class="activity" id="activity-result">-</span>
+          </div>
+          <div class="plan-item">
+            <span class="time">Outdoor:</span>
+            <span class="activity" id="outdoor-result">-</span>
+          </div>
+          <div class="plan-item">
+            <span class="time">Evening:</span>
+            <span class="activity" id="evening-result">-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
